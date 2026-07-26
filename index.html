@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ePortfolio | Andrew Blaine Allen</title>
+    <style>
+        /* Modern Dark Theme Base Styles */
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --accent-color: #38bdf8;
+            --secondary-text: #94a3b8;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--card-bg);
+            border-bottom: 1px solid var(--border-color);
+            padding: 2.5rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--accent-color);
+            font-size: 2.2rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            color: var(--secondary-text);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        /* Responsive Video Container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 6px;
+            background: #000;
+            margin-top: 1rem;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--secondary-text);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Andrew Allen</h1>
+        <h2>ePortfolio</h2>
+        <p>SNHU CS499 - Computer Science Capstone</p>
+    </header>
+
+    <main>
+        <!-- Code Review Section -->
+        <section class="card">
+            <h2>Code Review</h2>
+            <p>
+                Welcome to my computer science capstone ePortfolio. Below is my code review video detailing the refactoring work, architecture design, and optimization enhancements I plan to apply to the inventory tracking application.
+            </p>
+
+            <!-- YouTube Video Embed Placeholder -->
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/h_5UoD4-y0A?si=Odv0ClMpQL69HZND"
+                    title="Code Review Video" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Narrative / Highlights Section 
+        <section class="card">
+            <h2>Enhancement Proposals</h2>
+            <p>
+
+
+            </p>
+        </section> --->
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Andrew Allen. Hosted on GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
