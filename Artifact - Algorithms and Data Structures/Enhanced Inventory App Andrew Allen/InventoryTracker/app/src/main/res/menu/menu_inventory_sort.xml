@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group >
+        <item
+            android:id="@+id/action_sort_name"
+            android:title="Sort by Name" />
+        <item
+            android:id="@+id/action_sort_quantity"
+            android:title="Sort by Quantity" />
+        <item
+            android:id="@+id/action_sort_price"
+            android:title="Sort by Price" />
+    </group>
+    <item
+        android:id="@+id/action_sort_reset"
+        android:title="Reset" />
+</menu>

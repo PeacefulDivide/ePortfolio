@@ -1,0 +1,15 @@
+<resources>
+    <style name="Theme.ManageMyInventory" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_brand</item>
+        <item name="android:windowBackground">@color/day_background</item>
+
+        <item name="colorSurface">@color/day_card_white</item>
+        <item name="colorSurfaceVariant">@color/day_background</item>
+
+        <item name="colorOnSurface">@color/text_black_high</item>
+        <item name="colorOnSurfaceVariant">@color/text_grey_dark</item>
+
+        <item name="android:statusBarColor">@color/primary_brand</item>
+        <item name="android:navigationBarColor">@color/day_background</item>
+    </style>
+</resources>

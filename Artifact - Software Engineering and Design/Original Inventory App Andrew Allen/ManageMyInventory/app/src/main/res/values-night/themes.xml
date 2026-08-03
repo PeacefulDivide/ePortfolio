@@ -1,0 +1,15 @@
+<resources>
+    <style name="Theme.ManageMyInventory" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_brand_night</item>
+        <item name="android:windowBackground">@color/amoled_black</item>
+
+        <item name="colorSurface">@color/amoled_black</item>
+        <item name="colorSurfaceVariant">@color/amoled_card_grey</item>
+
+        <item name="colorOnSurface">@color/text_white_high</item>
+        <item name="colorOnSurfaceVariant">@color/text_grey_light</item>
+
+        <item name="android:statusBarColor">@color/amoled_black</item>
+        <item name="android:navigationBarColor">@color/amoled_black</item>
+    </style>
+</resources>

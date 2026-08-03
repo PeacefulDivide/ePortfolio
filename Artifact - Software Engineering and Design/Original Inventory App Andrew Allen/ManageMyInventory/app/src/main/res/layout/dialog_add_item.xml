@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/edit_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item Name"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/edit_item_qty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Initial Quantity"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edit_item_threshold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Low Stock Threshold"
+        android:inputType="number" />
+</LinearLayout>

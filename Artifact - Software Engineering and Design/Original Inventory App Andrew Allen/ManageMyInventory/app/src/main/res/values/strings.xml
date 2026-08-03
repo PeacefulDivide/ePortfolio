@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Manage My Inventory</string>
+    <string name="add_new_inventory_item">Add new inventory item</string>
+    <string name="delete_item_from_inventory">Delete item from inventory</string>
+    <string name="quantity">Quantity</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="manage_my_inventory">Manage My Inventory</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="username">Username</string>
+    <string name="or">Or</string>
+    <string name="alert_me_when_stock_is_below_x">Alert me when stock is below [ X ]</string>
+    <string name="save">Save</string>
+    <string name="subtract">-</string>
+    <string name="add">+</string>
+    <string name="send_sms_alert">Send SMS Alert</string>
+    <string name="scan_barcode">Scan Barcode</string>
+    <string name="enter_item_name">Enter Item Name</string>
+    <string name="notification_icon">Notification Icon</string>
+    <string name="enable_sms_alerts">Enable SMS Alerts?</string>
+    <string name="this_allows_us_to_notify_you_when_an_item_falls_below_its_set_threshold">This allows us to notify you when an item falls below its set threshold.</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="not_now">Not Now</string>
+    <string name="quantityText">Quantity: %1$d</string>
+</resources>
