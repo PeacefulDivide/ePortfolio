@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorSurfaceContainerLow"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvHeaderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingTop="24dp"
+        android:text="Inventory Dashboard"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        android:textColor="?attr/colorOnPrimaryContainer" />
+
+    <TextView
+        android:id="@+id/tvTotalValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="Total Value: $0.00"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium" />
+
+    <TextView
+        android:id="@+id/tvLowStockAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:text="Low Stock Items: 0" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="36dp"
+        android:layout_weight="1"
+        android:background="?attr/colorOutlineVariant" />
+</LinearLayout>

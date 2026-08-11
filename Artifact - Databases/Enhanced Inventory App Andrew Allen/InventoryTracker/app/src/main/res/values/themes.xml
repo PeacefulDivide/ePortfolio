@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.InventoryTracker" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Allows contextual action mode to overlay top layout instead of pushing it down -->
+        <item name="windowActionModeOverlay">true</item>
+
+        <!-- Set contextual action bar colors to match searchbars -->
+        <item name="actionModeBackground">?attr/colorSurfaceContainerHigh</item>
+
+        <!-- Style all SearchViews in app -->
+        <item name="materialSearchViewStyle">@style/CustomSearchViewStyle</item>
+
+    </style>
+
+    <!-- 2. Custom SearchView Style -->
+    <style name="CustomSearchViewStyle" parent="Widget.Material3.SearchView">
+        <!-- Sets the surface color dynamically for Light and Dark modes -->
+        <item name="backgroundTint">?attr/colorSurface</item>
+    </style>
+
+    <style name="Theme.InventoryTracker" parent="Base.Theme.InventoryTracker" />
+</resources>

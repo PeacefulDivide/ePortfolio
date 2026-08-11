@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/inventoryListFragment">
+
+    <fragment
+        android:id="@+id/inventoryListFragment"
+        android:name="com.alttabtechnologies.inventorytracker.view.InventoryListFragment"
+        android:label="Inventory Dashboard"
+        tools:layout="@layout/fragment_inventory_list">
+        <action
+            android:id="@+id/action_inventoryListFragment_to_inventoryDetailFragment"
+            app:destination="@id/inventoryDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/inventoryDetailFragment"
+        android:name="com.alttabtechnologies.inventorytracker.view.InventoryDetailFragment"
+        android:label="InventoryDetailFragment"
+        tools:layout="@layout/fragment_inventory_detail">
+        <argument
+            android:name="itemId"
+            app:argType="integer" />
+
+    </fragment>
+</navigation>

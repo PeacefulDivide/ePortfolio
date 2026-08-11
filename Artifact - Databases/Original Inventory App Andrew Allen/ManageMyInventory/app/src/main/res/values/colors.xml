@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_brand">#6200EE</color>
+    <color name="primary_brand_night">#BB86FC</color>
+
+    <color name="amoled_black">#000000</color>
+    <color name="amoled_card_grey">#121212</color> <color name="text_white_high">#FFFFFF</color>
+    <color name="text_grey_light">#E0E0E0</color>
+
+    <color name="day_background">#F8F9FA</color>
+    <color name="day_card_white">#FFFFFF</color>
+    <color name="text_black_high">#1C1B1F</color>
+    <color name="text_grey_dark">#49454F</color>
+</resources>
