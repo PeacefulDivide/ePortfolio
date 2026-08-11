@@ -47,7 +47,7 @@ The original inventory app was created during my CS360 Mobile Architect and Prog
 
 **Summary:**
 
-The original inventory app did not contain any searching, sorting, or data aggregations. This enhancement changes that. I implemented dynamic multifield sorting using comparator-based approaches, achieving O(n log n) efficiency for organizing inventory items by name, price, or quantity. I also implemented real-time aggregation algorithms within the ViewModel, calculating total inventory value and low-stock item counts with linear O(n) time complexity. Collection transformation pipelines were also added for filtering and view resettings, maintaining an immutable dataset to improve data consistency. These enhancements demonstrate algorithmic principles by replacing direct collection modification with elegant Kotlin collection operations, while ensuring the user interface updates through LiveData and ViewModel integration. These improvements really bring the app together providing data organization and real-time business insights.
+The original inventory app did not contain any searching, sorting, or data aggregations. This enhancement changes that. I implemented dynamic multifield sorting using comparator-based approaches, achieving O(n log n) efficiency for organizing inventory items by name, price, and/or quantity. I also implemented real-time aggregation algorithms within the ViewModel, calculating total inventory value and low-stock item counts with linear O(n) time complexity. Collection transformation pipelines were also added for filtering and view resettings, maintaining an immutable dataset to improve data consistency. These enhancements demonstrate algorithmic principles by replacing direct collection modification with elegant Kotlin collection operations, while ensuring the user interface updates through LiveData and ViewModel integration. These improvements really bring the app together providing data organization and real-time business insights.
 
 **Full Narrative & Source Code:** TODO
 
@@ -58,7 +58,7 @@ The original inventory app did not contain any searching, sorting, or data aggre
 
 **Summary:** 
 
-TODO
+This enhancement transcended the original apps raw SQLite database implementation. During this enhancement I implemented a Room ORM database architecture, replacing direct access SQLite interactions with a structured MVVM pattern that separates UI, logic, and persistence layers. I defined type-safe data access objects like InventoryDao, abstracting database operations through a repository layer, using Kotlin coroutines for asynchronous operations, and implementing comprehensive unit tests to validate data integrity. These database improvements not only improve code reliability and testability but also demonstrate how modern Android development practices can transform this inventory app into a more resilient and maintainable data management system that protects both performance and accuracy.
 
 **Full Narrative & Source Code:** TODO
 
