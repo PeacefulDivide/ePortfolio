@@ -198,6 +198,65 @@
             height: 14px;
             fill: currentColor;
         }
+
+        /* Image Styles */
+        .portfolio-img {
+            width: 100%;
+            max-width: 650px;
+            height: auto;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            display: block;
+            margin: 1.25rem auto 0.5rem auto;
+        }
+
+        .img-caption {
+            text-align: center;
+            color: var(--secondary-text);
+            font-size: 0.85rem;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Container for side-by-side images */
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            /* Wraps to single column on small mobile screens */
+            gap: 1.5rem;
+            /* Spacing between images */
+            justify-content: center;
+            align-items: flex-start;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+
+        /* Individual image card wrapper inside the grid */
+        .image-grid-item {
+            flex: 1;
+            min-width: 220px;
+            /* Prevents items from squishing too small */
+            max-width: 300px;
+            /* Restricts mobile screenshots from getting too wide */
+            text-align: center;
+        }
+
+        /* Images inside the grid */
+        .image-grid-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+            display: block;
+        }
+
+        /* Sub-captions under individual images */
+        .grid-subcaption {
+            font-size: 0.8rem;
+            color: var(--secondary-text);
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
     </style>
 </head>
 
@@ -286,7 +345,7 @@
             <p>
                 Courses such as DAD 220: Intro to Structured Databases, CS 340: Client/Server Development, and CS 360:
                 Mobile Architecture and Programming gave me experience with database design, SQL, NoSQL, APIs, MongoDB,
-                data persistence, and application architecture.
+                data persistence, and application architectures.
                 I have learned the importance of separating responsibilities within an application and applying patterns
                 such as Model-View-Controller (MVC), Model-View-ViewModel (MVVM), and repository-based data access.
                 These concepts became especially valuable during my capstone, where I applied architectural and database
@@ -384,18 +443,40 @@
                 Chosen Artifact
             </h3>
             <p>
-                The artifact I chose for my ePortfolio is an Android inventory tracking app that I originally developed
+                The artifact I chose for my ePortfolio is an Android inventory tracking app that I originally
+                developed
                 during my time in CS360 Mobile Architect and Programming course.
                 The application allowed users to manage inventory items by creating, viewing, updating, and deleting
                 products while tracking quantities and product information.
                 It was developed using Java, Android Studio, and the Model-View-Controller (MVC) design pattern.
             </p>
             <p>
-                For this enhancement, I redesigned and rebuilt the whole application from the ground up using Kotlin,
+                For this enhancement, I redesigned and rebuilt the whole application from the ground up using
+                Kotlin,
                 the Model-View-ViewModel (MVVM) design pattern, and Jetpack navigation components.
                 This approach separates the user interface from the application's business logic, creating a more
-                modular and maintainable codebase easier to expand and test.
+                modular and maintainable codebase easier to expand and test (Figure 1.0).
             </p>
+            <!-- Side-by-Side Image Container -->
+            <div class="image-grid">
+                <div class="image-grid-item">
+                    <img src="assets/OldInventory.png" alt="Original Inventory App List">
+                    <p class="grid-subcaption">(A) Original Interface</p>
+                </div>
+                <div class="image-grid-item">
+                    <img src="assets/NewInventory.png" alt="Enhanced Inventory App List">
+                    <p class="grid-subcaption">(B) Enhanced MVVM Interface</p>
+                </div>
+            </div>
+            <!-- Main Figure Caption -->
+            <figure>
+                <figcaption class="img-caption">
+                    Figure 1.0: As demonstrated by figure (A) the original implementation utilized a basic layout with
+                    coupled activities. The refactored interface (B) employs the MVVM architectural pattern, using
+                    Fragment-based design with Material Design 3 components, providing a significantly better user
+                    experience and separation of concerns.
+                </figcaption>
+            </figure>
             <h3>
                 Justification for inclusion
             </h3>
@@ -409,27 +490,42 @@
                 These enhancements allowed me to demonstrate my programming, critical thinking, and problem-solving
                 skills to create a more effective solution.
             </p>
+            <figure>
+                <img src="assets/MVVMCode.png" alt="MVVM example code" class="portfolio-img">
+                <figcaption class="img-caption">Figure 1.1: Kotlin InventoryViewModel code demonstrating reactive data
+                    management using MediatorLiveData to decouple state evaluation from the UI fragment layer.
+                </figcaption>
+            </figure>
             <h3>
                 Course Outcome Coverage
             </h3>
             <p>
                 The enhancements completed for this artifact successfully meet the software engineering and design
-                outcomes I established for the artifact.
+                outcomes I established originally for the artifact, in particular, course outcomes two and four.
                 I successfully ported the application to another language, implemented a better design architecture, and
-                made the codebase more modular and maintainable.
+                made the codebase more modular and maintainable (Figure 1.1).
             </p>
             <p>
-                As for updates to my outcome/coverage plans, there are a couple features from the original application
-                that I plan to incorporate in future versions.
-                The original artifact utilizes a login screen and SMS notification for low stock alerts.
-                I am planning to keep the login screen as a secondary way for users to be able to save their inventories
-                to their Google Drive accounts.
-                I have also decided I would prefer to implement standard android notifications as opposed to SMS
-                notifications, as it is better practice.
-                Also, I have not implemented barcode scanning yet to populate the SKU field but plan to in a later
-                version.
-                I would also like to implement the camera for taking photos of inventory items and displaying them in
-                the inventory list.
+                <strong>Course Outcome Two:</strong> Design, develop, and deliver professional-quality oral, written, and visual
+                communications that are coherent, technically sound, and appropriately adapted to specific audiences and
+                contexts.
+            </p>
+            <p>
+                I achieved this outcome by producing enhancement narratives, documenting code, and verbally and visually
+                providing a code review. These documents describe the transition from Java to Kotlin, the replacement
+                from MVC to MVVM architecture, the implementation of dynamic multifield sorting, and the integration of
+                Room for local data persistence.
+            </p>
+            <p>
+                <strong>Course Outcome Three:</strong> Demonstrate an ability to use well-founded and innovative techniques, skills, and
+                tools in computing practices for the purpose of implementing computer solutions that deliver value and
+                accomplish industry-specific goals
+            </p>
+            <p>
+                I achieved this outcome by rebuilding the original Java application using Kotlin, and replacing MVC with
+                MVVM architecture. I also replaced the original activity-based strucutre with fragments and Jetpack
+                navigation. These changes improved seperation of concern and created a more modular and maintainable
+                codebase.
             </p>
             <h3>
                 Reflection
@@ -499,6 +595,29 @@
                 efficient collection processing, dynamic sorting, and real time calculations using Kotlin collections
                 and modern android components.
             </p>
+            <!-- Side-by-Side Image Container -->
+            <figure>
+                <div class="image-grid">
+                    <div class="image-grid-item">
+                        <img src="assets/DataAggregations.png" alt="Data Aggregations Example in application.">
+                        <p class="grid-subcaption">(A) Data Aggregation Menu</p>
+                    </div>
+                    <div class="image-grid-item">
+                        <img src="assets/NewSorting.png" alt="Multifield Sorting Example in application.">
+                        <p class="grid-subcaption">(B) Multifield Sorting</p>
+                    </div>
+                    <div class="image-grid-item">
+                        <img src="assets/Search.png" alt="New Search Feature.">
+                        <p class="grid-subcaption">(C) Live Search Filtering</p>
+                    </div>
+                </div>
+
+                <!-- Main Figure Caption -->
+                <figcaption class="img-caption">
+                    Figure 2.0: Key algorithmic features in action: (A) summary data aggregation drawer, (B) multifield
+                    sorting with active chip rules, and (C) live search filtering.
+                </figcaption>
+            </figure>
             <h3>
                 Justification for Inclusion
             </h3>
@@ -506,7 +625,7 @@
                 I selected this artifact because it demonstrates how algorithms and data structures directly impact app
                 performance and usability.
                 The original app did successfully manage inventory records, but did not incorporate any searching,
-                filtering, or data aggregation algorithms.
+                filtering, or data aggregation algorithms (Figure 2.0).
                 Therefore, with this enhancement I emphasized these and incorporated them into the app to bring more
                 value to the end user.
             </p>
@@ -515,13 +634,19 @@
                 operations.
                 Rather than creating separate sorting routines for each field, I implemented comparator-based sorting
                 that allowed users to organize inventory items by name, price, or quantity in either ascending or
-                descending order.
+                descending order (Figure 2.1).
                 This approach performs efficient in-memory sorting with a time complexity of O(n log n) while reducing
                 duplicated code and improving maintainability.
             </p>
+            <figure>
+                <img src="assets/SortingCode.png" alt="Source code for sorting" class="portfolio-img">
+                <figcaption class="img-caption">Figure 2.1: Dynamic comparator initilization and chanined evaluation
+                    logic within sortInventoryItems().
+                </figcaption>
+            </figure>
             <p>
                 I also implemented real time aggregation algorithms within the ViewModel to continuously calculate
-                inventory statistics.
+                inventory statistics (Figure 2.0A).
                 Each time the inventory data changes, the application performs a single linear pass through the
                 collection to calculate the total inventory value and determine the number of items that have reached or
                 fallen below their low-stock threshold.
@@ -530,12 +655,13 @@
             </p>
             <p>
                 Another enhancement made to the application was implementing collection transformation pipelines for
-                filtering and resetting inventory views.
+                filtering and resetting inventory views (Figure 2.0C).
                 Instead of modifying the inventory collection directly, the app applies filter predicates and sorting
                 operations to produce the transformed inventory collection to the user.
-                Maintaining an immutable dataset improves data consistency and makes the apps’ behavior more predictable
+                Maintaining an immutable dataset improves data consistency and makes the app's behavior more predictable
                 and easier to maintain.
             </p>
+
             <h3>
                 Course Outcome Coverage
             </h3>
@@ -544,19 +670,25 @@
                 outcomes I established originally for the artifact, in particular, course outcomes three and four.
             </p>
             <p>
-                For outcome three: Design and evaluate computing solutions using algorithmic principles and computer
+                <strong>Course Outcome three:</strong> Design and evaluate computing solutions using algorithmic principles and
+                computer
                 science practices and standards appropriate to its solution, while managing the trade-offs involved in
                 design choices.
+            </p>
+            <p>
                 My enhancements demonstrate this outcome by implementing efficient collection processing algorithms,
                 comparator based sorting, and linear aggregation techniques to organize and analyze inventory data.
                 Evaluating the time complexity of these operations allowed me to select approaches that provide the best
                 performance while maintaining clean code.
             </p>
             <p>
-                For outcome four: Demonstrate an ability to use a well-founded and innovative techniques, skills, and
+                <strong>Course Outcome four:</strong> Demonstrate an ability to use a well-founded and innovative techniques, skills,
+                and
                 tools in computing practices for the purpose of implementing computer solutions that deliver value and
                 accomplish industry-specific goals.
-                The app was enhanced using Kotlin’s collection framework, LiveData, ViewModel, and other modern Android
+            </p>
+            <p>
+                To achieve this outcome the app was enhanced using Kotlin’s collection framework, LiveData, ViewModel, and other modern Android
                 development practices.
                 These technologies allowed me to separate algorithmic processing from the user interface while creating
                 a more scalable and maintainable application.
@@ -619,8 +751,27 @@
                 The original version was created with Java and Android Studio and provided the main functionality needed
                 to manage inventory data locally.
                 For this enhancement I implemented Room, Androids object-relational mapping (ORM) library, to provide a
-                safer and more structured interface between the app and its SQLite database.
+                safer and more structured interface between the app and its SQLite database (Figure 3.0).
             </p>
+            <!-- Side-by-Side Image Container -->
+            <figure>
+                <div class="image-grid">
+                    <div class="image-grid-item">
+                        <img src="assets/NewItemDetail.png" alt="Add item/ item detail screen.">
+                        <p class="grid-subcaption">(A) Item Details/ Add Item</p>
+                    </div>
+                    <div class="image-grid-item">
+                        <img src="assets/NewSorting.png" alt="Shows added item is persistent in inventory list.">
+                        <p class="grid-subcaption">(B) Item Persists In List</p>
+                    </div>
+                </div>
+
+                <!-- Main Figure Caption -->
+                <figcaption class="img-caption">
+                    Figure 3.0: Database persistence workflows: (A) entry screen for creating new inventory items, and
+                    (B) main inventory list verifying persistent SQLite storage across app restarts.
+                </figcaption>
+            </figure>
             <p>
                 The enhanced database architecture includes an AppDatabase class, an InventoryDao data access object, an
                 inventory repository, and database unit tests.
@@ -639,12 +790,18 @@
             <p>
                 Many components of this enhancement demonstrate my database skills.
                 InventoryDao for example, defines the database operations used by the app, including inserting,
-                retrieving, updating, and deleting records.
+                retrieving, updating, and deleting records (Figure 3.1).
                 By using a data access object, database operations are organized into a dedicated layer rather than
                 being distributed throughout the app.
                 This improves separation of concerns and makes the database code easier to understand, test, and
                 maintain.
             </p>
+            <figure>
+                <img src="assets/DatabaseCode.png" alt="Source code for data access object" class="portfolio-img">
+                <figcaption class="img-caption">Figure 3.1: Data access object providing contract for SQLite database
+                    operations.
+                </figcaption>
+            </figure>
             <p>
                 The Room database implementation also provides a structured mapping between Kotlin data classes and
                 SQLite database tables.
@@ -686,9 +843,11 @@
                 originally for this enhancement, in particular, course outcomes four and five.
             </p>
             <p>
-                For course outcome four: Demonstrate an ability to use well-founded and innovative techniques, skills,
+                <strong>Course Outcome Four:</strong> Demonstrate an ability to use well-founded and innovative techniques, skills,
                 and tools in computing practices for the purpose of implementing computer solutions that deliver value
                 and accomplish industry-specific goals.
+            </p>
+            <p>
                 The implementation of Room, SQLite, data access objects, repositories, Kotlin coroutines, and database
                 unit tests demonstrates the use of established technologies and professional development practices to
                 create a reliable data persistent solution.
@@ -698,9 +857,11 @@
                 has been closed or restarted.
             </p>
             <p>
-                Now, for course outcome five: Develop a security mindset that anticipates adversarial exploits in
+                <strong>Course Outcome Five:</strong> Develop a security mindset that anticipates adversarial exploits in
                 software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure
                 privacy and enhanced security of data and resources.
+            </p>
+            <p>
                 Even though the inventory app does not currently store highly sensitive personal information, I applied
                 a security mindset by considering how the database architecture could reduce potential risks to data
                 integrity and reliability.
@@ -772,7 +933,8 @@
                 integrity of the entire app.
             </p>
             <div class="artifact-links">
-                <a href="https://github.com/PeacefulDivide/ePortfolio/tree/main/Artifact%20-%20Databases" target="_blank" rel="noopener noreferrer" class="github-btn">
+                <a href="https://github.com/PeacefulDivide/ePortfolio/tree/main/Artifact%20-%20Databases"
+                    target="_blank" rel="noopener noreferrer" class="github-btn">
                     <svg viewBox="0 0 24 24">
                         <path
                             d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
