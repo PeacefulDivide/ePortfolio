@@ -134,6 +134,7 @@
             width: 18px;
             height: 18px;
             fill: currentColor;
+            vertical-align: -3px;
         }
 
         /* Table of contents styles */
@@ -257,6 +258,29 @@
             margin-top: 0.5rem;
             font-style: italic;
         }
+
+        /* Math Style */
+        .math-chip {
+            background-color: #1e293b;
+            color: #38bdf8;
+            border: 1px solid #334155;
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-family: 'Fira Code', monospace, sans-serif;
+            font-size: 0.88em;
+        }
+
+        /* Figure Style */
+        .figure-tag {
+            background-color: #1e293b;
+            color: #94a3b8;
+            border: 1px solid #334155;
+            padding: 0.15rem 0.45rem;
+            border-radius: 4px;
+            font-size: 0.85em;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
     </style>
 </head>
 
@@ -275,7 +299,7 @@
     </header>
 
     <main>
-        <!-- Table of conents section -->
+        <!-- Table of contents section -->
         <nav class="toc-card" aria-label="Table of Contents">
             <h3>Table of Contents</h3>
             <ul class="toc-list">
@@ -300,7 +324,7 @@
                 understanding how everything works together to creating real software solutions.
                 Throughout the program, I developed skills in software engineering, algorithms and data structures,
                 databases, security, testing, system analysis, and application development.
-                More importantly the program taught me to approach software development as a process of analyzing
+                More importantly, the program taught me to approach software development as a process of analyzing
                 requirements, selecting appropriate technologies, designing maintainable solutions, testing
                 implementations, and communicating technical decisions to stakeholders.
             </p>
@@ -318,12 +342,12 @@
                 Professional Skills and Computer Science Foundation
             </h3>
             <p>
-                Courses such as CS 250: Software Development Lifecycle, and CS 255, System Analysis and Design, taught
+                Courses such as CS 250: Software Development Lifecycle, and CS 255: System Analysis and Design, taught
                 me that successful software development requires more than writing code.
                 I learned the importance of requirements analysis, documentation, development processes, version
                 control, and communicating design decisions.
                 My capstone project further strengthened this perspective by requiring me to evaluate and enhance an
-                existing past project while considering how architectural changes affect the system as whole.
+                existing past project while considering how architectural changes affect the system as a whole.
             </p>
             <p>
                 My coursework also strengthened my ability to translate technical requirements into understandable
@@ -373,7 +397,7 @@
             <p>
                 The Software Engineering and Design enhancement demonstrates a complete rewrite of the application's
                 architecture using Kotlin, MVVM, and modern Android navigation.
-                The Algorithms and Data Structures enhancement demonstrates practical applications of multifield sorting
+                The Algorithms and Data Structures enhancement demonstrates practical applications of multi-field sorting
                 and linear inventory calculations.
                 The Database enhancement demonstrates persistent data management using Room and SQLite while maintaining
                 separation between the database, repository, ViewModel, and user interface.
@@ -391,7 +415,7 @@
             <p>
                 Ultimately, this ePortfolio represents both what I have learned and my ability to apply that knowledge
                 to a practical software development project.
-                The Computer Science program has given me the technical foundation, problem solving skills, and
+                The Computer Science program has given me the technical foundation, problem-solving skills, and
                 professional perspective necessary to pursue my goal of becoming a software engineer and to continue
                 learning and growing within the field.
             </p>
@@ -430,23 +454,23 @@
             <br>
             <!--Link to GitHub-->
             <div class="artifact-links">
-                <a href="https://github.com/PeacefulDivide/ePortfolio/tree/main/"
-                    target="_blank" rel="noopener noreferrer" class="github-btn">
+                <a href="https://github.com/PeacefulDivide/ePortfolio/blob/main/CS%20499%20Enhancement%20Plan%20Andrew%20Allen.pdf" target="_blank"
+                    rel="noopener noreferrer" class="github-btn">
                     <svg viewBox="0 0 24 24">
                         <path
                             d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
                     </svg>
                     View Detailed Enhancement Plan
                 </a>
-            <!--Back to top Link-->
-            <div class="artifact-links">
-                <a href="#top" class="back-to-top" style="margin-left: auto;">
-                    <svg viewBox="0 0 24 24">
-                        <path d="M12 4l-8 8h5v8h6v-8h5z" />
-                    </svg>
-                    Back to Top
-                </a>
-            </div>
+                <!--Back to top Link-->
+                <div class="artifact-links">
+                    <a href="#top" class="back-to-top" style="margin-left: auto;">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M12 4l-8 8h5v8h6v-8h5z" />
+                        </svg>
+                        Back to Top
+                    </a>
+                </div>
         </section>
 
         <!-- Enhancement One -->
@@ -460,7 +484,7 @@
             <p>
                 The artifact I chose for my ePortfolio is an Android inventory tracking app that I originally
                 developed
-                during my time in CS360 Mobile Architect and Programming course.
+                during my time in CS360: Mobile Architecture and Programming course.
                 The application allowed users to manage inventory items by creating, viewing, updating, and deleting
                 products while tracking quantities and product information.
                 It was developed using Java, Android Studio, and the Model-View-Controller (MVC) design pattern.
@@ -470,7 +494,7 @@
                 Kotlin,
                 the Model-View-ViewModel (MVVM) design pattern, and Jetpack navigation components.
                 This approach separates the user interface from the application's business logic, creating a more
-                modular and maintainable codebase easier to expand and test (Figure 1.0).
+                modular and maintainable codebase easier to expand and test <span class="figure-tag">(Figure 1.0)</span>.
             </p>
             <!-- Side-by-Side Image Container -->
             <div class="image-grid">
@@ -518,7 +542,7 @@
                 The enhancements completed for this artifact successfully meet the software engineering and design
                 outcomes I established originally for the artifact, in particular, course outcomes two and four.
                 I successfully ported the application to another language, implemented a better design architecture, and
-                made the codebase more modular and maintainable (Figure 1.1).
+                made the codebase more modular and maintainable <span class="figure-tag">(Figure 1.1)</span>.
             </p>
             <p>
                 <strong>Course Outcome Two:</strong> Design, develop, and deliver professional-quality oral, written,
@@ -529,7 +553,7 @@
             <p>
                 I achieved this outcome by producing enhancement narratives, documenting code, and verbally and visually
                 providing a code review. These documents describe the transition from Java to Kotlin, the replacement
-                from MVC to MVVM architecture, the implementation of dynamic multifield sorting, and the integration of
+                from MVC to MVVM architecture, the implementation of dynamic multi-field sorting, and the integration of
                 Room for local data persistence.
             </p>
             <p>
@@ -540,8 +564,8 @@
             </p>
             <p>
                 I achieved this outcome by rebuilding the original Java application using Kotlin, and replacing MVC with
-                MVVM architecture. I also replaced the original activity-based strucutre with fragments and Jetpack
-                navigation. These changes improved seperation of concern and created a more modular and maintainable
+                MVVM architecture. I also replaced the original activity-based structure with fragments and Jetpack
+                navigation. These changes improved separation of concerns and created a more modular and maintainable
                 codebase.
             </p>
             <h3>
@@ -563,11 +587,11 @@
                 Thankfully, Android Studio is very smart and helps with this by highlighting errors in red and providing
                 a means to quickly import.
                 Then, when I got the application to build, I began testing it in the emulator.
-                The first thing I noticed after launching the application and trying to return to the InventoryFragment
-                from the ItemDetailFragment was that it would take me to the home screen.
-                To solve this problem, I had to configure the OnBackPressedDispatcher in MainActivity to work with the
-                application's NavController.
-                This ensured Androids navigation system remained in sync with Jetpacks navigation.
+                The first thing I noticed after launching the application and trying to return to the <code>InventoryFragment</code>
+                from the <code>ItemDetailFragment</code> was that it would take me to the home screen.
+                To solve this problem, I had to configure the <code>OnBackPressedDispatcher</code> in <code>MainActivity</code> to work with the
+                application's <code>NavController</code>.
+                This ensured Android's navigation system remained in sync with Jetpack's navigation.
             </p>
             <p>
                 Another challenge I faced while working on this enhancement was scope creep.
@@ -587,7 +611,7 @@
                         <path
                             d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
                     </svg>
-                    Enhancement One and Original Source Code
+                    View Source Code
                 </a>
 
                 <!-- Back to Top Link -->
@@ -606,12 +630,12 @@
             <h3>Chosen Artifact</h3>
             <p>
                 The artifact I chose for inclusion in my ePortfolio for this enhancement is an Android Inventory
-                Tracking application I originally created during the CS360 Mobile Architect and Programming course.
+                Tracking application I originally created during the CS 360: Mobile Architecture and Programming course.
                 The application allows users to create, update, delete, and manage inventory items while tracking
                 quantities and other item details.
                 For this enhancement, I expanded the application's algorithmic functionality by implementing more
-                efficient collection processing, dynamic sorting, and real time calculations using Kotlin collections
-                and modern android components.
+                efficient collection processing, dynamic sorting, and real-time calculations using Kotlin collections
+                and modern Android components.
             </p>
             <!-- Side-by-Side Image Container -->
             <figure>
@@ -621,8 +645,8 @@
                         <p class="grid-subcaption">(A) Data Aggregation Menu</p>
                     </div>
                     <div class="image-grid-item">
-                        <img src="assets/NewSorting.png" alt="Multifield Sorting Example in application.">
-                        <p class="grid-subcaption">(B) Multifield Sorting</p>
+                        <img src="assets/NewSorting.png" alt="Multi-field Sorting Example in application.">
+                        <p class="grid-subcaption">(B) Multi-field Sorting</p>
                     </div>
                     <div class="image-grid-item">
                         <img src="assets/Search.png" alt="New Search Feature.">
@@ -632,7 +656,7 @@
 
                 <!-- Main Figure Caption -->
                 <figcaption class="img-caption">
-                    Figure 2.0: Key algorithmic features in action: (A) summary data aggregation drawer, (B) multifield
+                    Figure 2.0: Key algorithmic features in action: (A) summary data aggregation drawer, (B) multi-field
                     sorting with active chip rules, and (C) live search filtering.
                 </figcaption>
             </figure>
@@ -643,37 +667,39 @@
                 I selected this artifact because it demonstrates how algorithms and data structures directly impact app
                 performance and usability.
                 The original app did successfully manage inventory records, but did not incorporate any searching,
-                filtering, or data aggregation algorithms (Figure 2.0).
+                filtering, or data aggregation algorithms <span class="figure-tag">(Figure 2.0)</span>.
                 Therefore, with this enhancement I emphasized these and incorporated them into the app to bring more
                 value to the end user.
             </p>
             <p>
-                One of the primary enhancements was implementing dynamic multi field sorting using Kotlin collection
+                One of the primary enhancements was implementing dynamic multi-field sorting using Kotlin collection
                 operations.
                 Rather than creating separate sorting routines for each field, I implemented comparator-based sorting
                 that allowed users to organize inventory items by name, price, or quantity in either ascending or
-                descending order (Figure 2.1).
-                This approach performs efficient in-memory sorting with a time complexity of O(n log n) while reducing
+                descending order <span class="figure-tag">(Figure 2.1)</span>.
+                This approach performs efficient in-memory sorting with a time complexity of <code
+                    class="math-chip">O(n log n)</code> while reducing
                 duplicated code and improving maintainability.
             </p>
             <figure>
                 <img src="assets/SortingCode.png" alt="Source code for sorting" class="portfolio-img">
-                <figcaption class="img-caption">Figure 2.1: Dynamic comparator initilization and chanined evaluation
+                <figcaption class="img-caption">Figure 2.1: Dynamic comparator initialization and chained evaluation
                     logic within sortInventoryItems().
                 </figcaption>
             </figure>
             <p>
-                I also implemented real time aggregation algorithms within the ViewModel to continuously calculate
-                inventory statistics (Figure 2.0A).
+                I also implemented real-time aggregation algorithms within the ViewModel to continuously calculate
+                inventory statistics <span class="figure-tag">(Figure 2.0A)</span>.
                 Each time the inventory data changes, the application performs a single linear pass through the
                 collection to calculate the total inventory value and determine the number of items that have reached or
                 fallen below their low-stock threshold.
-                These operations execute in O(n) time and automatically update the user interface through LiveData
+                These operations execute in <code class="math-chip">O(n)</code> time and automatically update the user
+                interface through LiveData
                 without blocking the main thread.
             </p>
             <p>
                 Another enhancement made to the application was implementing collection transformation pipelines for
-                filtering and resetting inventory views (Figure 2.0C).
+                filtering and resetting inventory views <span class="figure-tag">(Figure 2.0C)</span>.
                 Instead of modifying the inventory collection directly, the app applies filter predicates and sorting
                 operations to produce the transformed inventory collection to the user.
                 Maintaining an immutable dataset improves data consistency and makes the app's behavior more predictable
@@ -688,7 +714,7 @@
                 outcomes I established originally for the artifact, in particular, course outcomes three and four.
             </p>
             <p>
-                <strong>Course Outcome three:</strong> Design and evaluate computing solutions using algorithmic
+                <strong>Course Outcome Three:</strong> Design and evaluate computing solutions using algorithmic
                 principles and
                 computer
                 science practices and standards appropriate to its solution, while managing the trade-offs involved in
@@ -696,12 +722,12 @@
             </p>
             <p>
                 My enhancements demonstrate this outcome by implementing efficient collection processing algorithms,
-                comparator based sorting, and linear aggregation techniques to organize and analyze inventory data.
+                comparator-based sorting, and linear aggregation techniques to organize and analyze inventory data.
                 Evaluating the time complexity of these operations allowed me to select approaches that provide the best
                 performance while maintaining clean code.
             </p>
             <p>
-                <strong>Course Outcome four:</strong> Demonstrate an ability to use a well-founded and innovative
+                <strong>Course Outcome Four:</strong> Demonstrate an ability to use a well-founded and innovative
                 techniques, skills,
                 and
                 tools in computing practices for the purpose of implementing computer solutions that deliver value and
@@ -719,13 +745,13 @@
             </h3>
             <p>
                 Enhancing this artifact strengthened my understanding of how algorithms and data structures influence
-                both the apps performance and user experience.
+                both the app's performance and user experience.
                 While the original application stored and displayed inventory data correctly, this enhancement required
                 me to think more about how collections could be manipulated efficiently while keeping the user interface
                 responsive.
             </p>
             <p>
-                One of the most valuable lessons I learned during this enhancement was how Kotlin’s higher order
+                One of the most valuable lessons I learned during this enhancement was how Kotlin’s higher-order
                 functions simplify complex algorithmic operations without sacrificing performance.
                 Implementing comparator-based sorting, filtering, and aggregation algorithms reinforced the importance
                 of selecting the appropriate algorithm rather than relying on repetitive or inefficient coding practices
@@ -738,7 +764,7 @@
                 components, I needed to ensure that sorting, filtering, and aggregation operations remained in sync with
                 changes to the inventory data.
                 Solving these challenges improved my understanding of reactive programming, state management, and
-                lifecycle aware app design and how to properly approach these architectures.
+                lifecycle-aware app design and how to properly approach these architectures.
             </p>
             <!--Link to GitHub-->
             <div class="artifact-links">
@@ -748,7 +774,7 @@
                         <path
                             d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
                     </svg>
-                    Enhancement Two and Original Source Code
+                    View Source Code
                 </a>
 
                 <!-- Back to Top Link -->
@@ -767,13 +793,13 @@
             <h3>Chosen Artifact</h3>
             <p>
                 The artifact I chose for inclusion in my ePortfolio for this enhancement is an Android Inventory
-                Tracking application I originally created during my CS360 Mobile Architect and Programming course.
+                Tracking application I originally created during my CS360: Mobile Architecture and Programming course.
                 This application allows users to create, view, update, and delete inventory items while tracking item
                 information and quantities.
                 The original version was created with Java and Android Studio and provided the main functionality needed
                 to manage inventory data locally.
-                For this enhancement I implemented Room, Androids object-relational mapping (ORM) library, to provide a
-                safer and more structured interface between the app and its SQLite database (Figure 3.0).
+                For this enhancement I implemented Room, Android's object-relational mapping (ORM) library, to provide a
+                safer and more structured interface between the app and its SQLite database <span class="figure-tag">(Figure 3.0)</span>.
             </p>
             <!-- Side-by-Side Image Container -->
             <figure>
@@ -795,9 +821,9 @@
                 </figcaption>
             </figure>
             <p>
-                The enhanced database architecture includes an AppDatabase class, an InventoryDao data access object, an
+                The enhanced database architecture includes an <code>AppDatabase</code> class, an <code>InventoryDao</code> data access object, an
                 inventory repository, and database unit tests.
-                These components provide a clear separation between the apps UI, logic, and data persistence layers.
+                These components provide a clear separation between the app's UI, logic, and data persistence layers.
                 The application uses the Model-View-ViewModel (MVVM) pattern, allowing the ViewModel to communicate with
                 the repository rather than directly accessing the database like the original app.
                 This structure supports asynchronous database operations and makes the app easier to test and expand.
@@ -811,8 +837,8 @@
             </p>
             <p>
                 Many components of this enhancement demonstrate my database skills.
-                InventoryDao for example, defines the database operations used by the app, including inserting,
-                retrieving, updating, and deleting records (Figure 3.1).
+                <code>InventoryDao</code> for example, defines the database operations used by the app, including inserting,
+                retrieving, updating, and deleting records <span class="figure-tag">(Figure 3.1)</span>.
                 By using a data access object, database operations are organized into a dedicated layer rather than
                 being distributed throughout the app.
                 This improves separation of concerns and makes the database code easier to understand, test, and
@@ -830,12 +856,12 @@
                 Room reduces the amount of repetitive database code required by handling a lot of communication between
                 the app and SQLite for us.
                 It also provides compile-time validation of queries, which helps identify SQL errors during development.
-                This improved the reliability and maintainability of the apps data layer.
+                This improved the reliability and maintainability of the app's data layer.
             </p>
             <p>
                 The repository pattern was incorporated to create an additional layer of abstraction between the
                 ViewModel and database.
-                The repository manages access to inventory data and prevents high level app components from depending
+                The repository manages access to inventory data and prevents high-level app components from depending
                 directly on the database implementation.
                 This design encourages codebase modularity and makes it easier to modify and expand later.
                 The app also uses Kotlin coroutines and asynchronous data streams to perform database operations outside
@@ -844,7 +870,7 @@
             </p>
             <p>
                 Another improvement performed during this enhancement was the creation of database unit tests for
-                InventoryDao.
+                <code>InventoryDao</code>.
                 The tests verify that essential database operations function correctly, such as inserting new items,
                 retrieving stored records, updating existing records, and deleting records.
                 Testing the data access layer helped confirm that the app could reliably store and manage inventory
@@ -861,7 +887,7 @@
             </p>
             <h3>Course Outcome Coverage</h3>
             <p>
-                The enhancements completed for this artifact successfully meet the databases outcomes I identified
+                The enhancements completed for this artifact successfully meet the database outcomes I identified
                 originally for this enhancement, in particular, course outcomes four and five.
             </p>
             <p>
@@ -873,7 +899,7 @@
             <p>
                 The implementation of Room, SQLite, data access objects, repositories, Kotlin coroutines, and database
                 unit tests demonstrates the use of established technologies and professional development practices to
-                create a reliable data persistent solution.
+                create a reliable data persistence solution.
                 This enhanced database architecture supports the app’s primary purpose of allowing inventory information
                 to be stored, retrieved, updated, and deleted consistently.
                 This provides practical value by allowing users to manage records that remain available after the app
@@ -898,10 +924,10 @@
                 Room also provides compile-time validation of database queries, which helps identify query-related
                 errors during development before they cause unexpected errors or behavior when using the app.
                 Also, Kotlin coroutines were used to perform database operations asynchronously rather than on the main
-                apps thread. This improved performance and ensured that database activity is handled separately.
+                app thread. This improved performance and ensured that database activity is handled separately.
             </p>
             <p>
-                The addition of InventoryDaoTest further supports my security and reliability mindset by verifying that
+                The addition of <code>InventoryDaoTest</code> further supports my security and reliability mindset by verifying that
                 database operations behaved as expected.
                 The tests evaluated the essential operations of inserting, retrieving, updating, and deleting records.
                 Testing these functions helps identify potential defects that could affect the accuracy and integrity of
@@ -923,8 +949,8 @@
             <p>
                 One of the most valuable lessons I learned was the importance of maintaining a clear separation of
                 responsibilities across app layers.
-                Isolating the database operations with InventoryDao, managing the data access through
-                RoomInventoryRepository, and keeping database logic separate from the UI layer made the codebase easier
+                Isolating the database operations with <code>InventoryDao</code>, managing the data access through
+                <code>RoomInventoryRepository</code>, and keeping database logic separate from the UI layer made the codebase easier
                 to read and test.
                 I learned that effective database engineering involves a lot more than just creating tables and writing
                 queries.
@@ -942,7 +968,7 @@
                 importance of multithreading.
             </p>
             <p>
-                Another challenge I encountered was configuring isolated database unit tests in InventoryDaoTest.
+                Another challenge I encountered was configuring isolated database unit tests in <code>InventoryDaoTest</code>.
                 Establishing an in-memory database instance allowed me to execute and verify insert, retrieve, update,
                 and delete operations independently of the UI.
                 Creating these tests verified the importance of automated testing and I learned a way to verify database
@@ -964,7 +990,7 @@
                         <path
                             d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
                     </svg>
-                    Enhancement Three and Original Source Code
+                    View Source Code
                 </a>
 
                 <!-- Back to Top Link -->
