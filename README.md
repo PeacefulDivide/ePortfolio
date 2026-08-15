@@ -28,7 +28,7 @@ Embedded below is my video code review, analyzing the original architecture and 
 
 **Code Review Video:** 
 
-[![Watch Code Review Video](https://img.youtube.com/vi/h_5UoD4-y0A/maxresdefault.jpg)](https://www.youtube.com/vi/h_5UoD4-y0A?si=Odv0ClMpQL69HZND)
+[![Watch Code Review Video](https://img.youtube.com/vi/h_5UoD4-y0A/maxresdefault.jpg)](https://www.youtube.com/embed/h_5UoD4-y0A?si=Odv0ClMpQL69HZND)
 
 ---
 
