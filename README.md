@@ -33,7 +33,7 @@ Embedded below is my video code review, analyzing the original architecture and 
 ---
 
 ## Enhancement Plan
-For a comprehensive breakdown of project milestones, outcome alignments, and technical specifications created prior to development, view my [Enhancement Plan](https://github.com/PeacefulDivide/ePortfolio/blob/main/CS%20499%20Enhancement%20Plan%20Andrew%20Allen.pdf).
+For a comprehensive breakdown of project milestones, outcome alignments, and technical specifications created prior to development, view my [Enhancement Plan](https://github.com/PeacefulDivide/ePortfolio/blob/main/Enhancement%20Plan/CS%20499%20Enhancement%20Plan%20Andrew%20Allen.pdf).
 
 ---
 
