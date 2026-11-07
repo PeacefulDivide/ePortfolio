@@ -109,7 +109,7 @@
         }
 
         .github-btn {
-            display: infline-flex;
+            display: inline-flex;
             align-items: center;
             gap: 0.5rem;
             background-color: #1f2937;
@@ -308,6 +308,7 @@
                 <li><a href="#enhancement-one">3. Software Engineering</a></li>
                 <li><a href="#enhancement-two">4. Algorithms and Data Structures</a></li>
                 <li><a href="#enhancement-three">5. Databases</a></li>
+                <li><a href="#kept">6. Beyond the Capstone: Kept</a></li>
             </ul>
         </nav>
 
@@ -397,7 +398,8 @@
             <p>
                 The Software Engineering and Design enhancement demonstrates a complete rewrite of the application's
                 architecture using Kotlin, MVVM, and modern Android navigation.
-                The Algorithms and Data Structures enhancement demonstrates practical applications of multi-field sorting
+                The Algorithms and Data Structures enhancement demonstrates practical applications of multi-field
+                sorting
                 and linear inventory calculations.
                 The Database enhancement demonstrates persistent data management using Room and SQLite while maintaining
                 separation between the database, repository, ViewModel, and user interface.
@@ -438,7 +440,7 @@
             <p>
                 Embedded below is my video code review, analyzing the original architecture and codebase of my Android
                 inventory tracking
-                application. Conducting this comprehensive review allowed me to identify technical deficiences and
+                application. Conducting this comprehensive review allowed me to identify technical deficiencies and
                 structure a formal enhancement plan targeting three primary areas of computer science: Software
                 Engineering and Design, Algorithms and Data Structures, and Databases.
             </p>
@@ -454,8 +456,8 @@
             <br>
             <!--Link to GitHub-->
             <div class="artifact-links">
-                <a href="https://github.com/PeacefulDivide/ePortfolio/blob/main/Enhancement%20Plan/CS%20499%20Enhancement%20Plan%20Andrew%20Allen.pdf" target="_blank"
-                    rel="noopener noreferrer" class="github-btn">
+                <a href="https://github.com/PeacefulDivide/ePortfolio/blob/main/Enhancement%20Plan/CS%20499%20Enhancement%20Plan%20Andrew%20Allen.pdf"
+                    target="_blank" rel="noopener noreferrer" class="github-btn">
                     <svg viewBox="0 0 24 24">
                         <path
                             d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
@@ -463,14 +465,13 @@
                     View Detailed Enhancement Plan
                 </a>
                 <!--Back to top Link-->
-                <div class="artifact-links">
-                    <a href="#top" class="back-to-top" style="margin-left: auto;">
-                        <svg viewBox="0 0 24 24">
-                            <path d="M12 4l-8 8h5v8h6v-8h5z" />
-                        </svg>
-                        Back to Top
-                    </a>
-                </div>
+                <a href="#top" class="back-to-top">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 4l-8 8h5v8h6v-8h5z" />
+                    </svg>
+                    Back to Top
+                </a>
+            </div>
         </section>
 
         <!-- Enhancement One -->
@@ -494,7 +495,8 @@
                 Kotlin,
                 the Model-View-ViewModel (MVVM) design pattern, and Jetpack navigation components.
                 This approach separates the user interface from the application's business logic, creating a more
-                modular and maintainable codebase easier to expand and test <span class="figure-tag">(Figure 1.0)</span>.
+                modular and maintainable codebase easier to expand and test <span class="figure-tag">(Figure
+                    1.0)</span>.
             </p>
             <!-- Side-by-Side Image Container -->
             <div class="image-grid">
@@ -587,9 +589,11 @@
                 Thankfully, Android Studio is very smart and helps with this by highlighting errors in red and providing
                 a means to quickly import.
                 Then, when I got the application to build, I began testing it in the emulator.
-                The first thing I noticed after launching the application and trying to return to the <code>InventoryFragment</code>
+                The first thing I noticed after launching the application and trying to return to the
+                <code>InventoryFragment</code>
                 from the <code>ItemDetailFragment</code> was that it would take me to the home screen.
-                To solve this problem, I had to configure the <code>OnBackPressedDispatcher</code> in <code>MainActivity</code> to work with the
+                To solve this problem, I had to configure the <code>OnBackPressedDispatcher</code> in
+                <code>MainActivity</code> to work with the
                 application's <code>NavController</code>.
                 This ensured Android's navigation system remained in sync with Jetpack's navigation.
             </p>
@@ -799,7 +803,8 @@
                 The original version was created with Java and Android Studio and provided the main functionality needed
                 to manage inventory data locally.
                 For this enhancement I implemented Room, Android's object-relational mapping (ORM) library, to provide a
-                safer and more structured interface between the app and its SQLite database <span class="figure-tag">(Figure 3.0)</span>.
+                safer and more structured interface between the app and its SQLite database <span
+                    class="figure-tag">(Figure 3.0)</span>.
             </p>
             <!-- Side-by-Side Image Container -->
             <figure>
@@ -821,7 +826,8 @@
                 </figcaption>
             </figure>
             <p>
-                The enhanced database architecture includes an <code>AppDatabase</code> class, an <code>InventoryDao</code> data access object, an
+                The enhanced database architecture includes an <code>AppDatabase</code> class, an
+                <code>InventoryDao</code> data access object, an
                 inventory repository, and database unit tests.
                 These components provide a clear separation between the app's UI, logic, and data persistence layers.
                 The application uses the Model-View-ViewModel (MVVM) pattern, allowing the ViewModel to communicate with
@@ -837,7 +843,8 @@
             </p>
             <p>
                 Many components of this enhancement demonstrate my database skills.
-                <code>InventoryDao</code> for example, defines the database operations used by the app, including inserting,
+                <code>InventoryDao</code> for example, defines the database operations used by the app, including
+                inserting,
                 retrieving, updating, and deleting records <span class="figure-tag">(Figure 3.1)</span>.
                 By using a data access object, database operations are organized into a dedicated layer rather than
                 being distributed throughout the app.
@@ -927,7 +934,8 @@
                 app thread. This improved performance and ensured that database activity is handled separately.
             </p>
             <p>
-                The addition of <code>InventoryDaoTest</code> further supports my security and reliability mindset by verifying that
+                The addition of <code>InventoryDaoTest</code> further supports my security and reliability mindset by
+                verifying that
                 database operations behaved as expected.
                 The tests evaluated the essential operations of inserting, retrieving, updating, and deleting records.
                 Testing these functions helps identify potential defects that could affect the accuracy and integrity of
@@ -950,7 +958,8 @@
                 One of the most valuable lessons I learned was the importance of maintaining a clear separation of
                 responsibilities across app layers.
                 Isolating the database operations with <code>InventoryDao</code>, managing the data access through
-                <code>RoomInventoryRepository</code>, and keeping database logic separate from the UI layer made the codebase easier
+                <code>RoomInventoryRepository</code>, and keeping database logic separate from the UI layer made the
+                codebase easier
                 to read and test.
                 I learned that effective database engineering involves a lot more than just creating tables and writing
                 queries.
@@ -968,7 +977,8 @@
                 importance of multithreading.
             </p>
             <p>
-                Another challenge I encountered was configuring isolated database unit tests in <code>InventoryDaoTest</code>.
+                Another challenge I encountered was configuring isolated database unit tests in
+                <code>InventoryDaoTest</code>.
                 Establishing an in-memory database instance allowed me to execute and verify insert, retrieve, update,
                 and delete operations independently of the UI.
                 Creating these tests verified the importance of automated testing and I learned a way to verify database
@@ -992,6 +1002,84 @@
                     </svg>
                     View Source Code
                 </a>
+
+                <!-- Back to Top Link -->
+                <a href="#top" class="back-to-top">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 4l-8 8h5v8h6v-8h5z" />
+                    </svg>
+                    Back to Top
+                </a>
+            </div>
+        </section>
+
+        <!-- Beyond the Capstone: Kept -->
+        <section id="kept" class="card">
+            <h2>Beyond the Capstone: Kept</h2>
+            <h3>From Capstone Project to a Real App</h3>
+            <p>
+                After the capstone, I kept building the inventory app. It is now <strong>Kept: Inventory &amp;
+                    Collections</strong>, an Android app for tracking the things you own, from household belongings to
+                collections such as vinyl records. 
+            </p>
+            <p>
+                The capstone enhancements focused on architecture, algorithms, and persistence. Kept is about
+                everything that comes with putting an app in front of real users: protecting their data, respecting
+                their privacy, handling purchases, supporting multiple languages, and publishing a release on Google Play.
+            </p>
+
+            <!-- Screenshots -->
+            <div class="image-grid">
+                <div class="image-grid-item">
+                    <img src="assets/Kept1.png" alt="Kept collections screen">
+                    <p class="grid-subcaption">(A) Collections</p>
+                </div>
+                <div class="image-grid-item">
+                    <img src="assets/Kept2.png" alt="Kept items in grid and list layouts">
+                    <p class="grid-subcaption">(B) Grid and list layouts</p>
+                </div>
+                <div class="image-grid-item">
+                    <img src="assets/Kept3.png" alt="Kept item details screen">
+                    <p class="grid-subcaption">(C) Item details</p>
+                </div>
+            </div>
+
+            <h3>Technical Highlights</h3>
+            <ul>
+                <li><strong>Architecture:</strong> Kotlin with MVVM, fragment-based navigation, and Jetpack Compose for
+                    the settings, welcome tour, paywall, and barcode scanner screens.</li>
+                <li><strong>Data safety:</strong> Room with hand-written database migrations (currently schema version
+                    7) and no destructive fallback, so an app update can never wipe a user's collection.</li>
+                <li><strong>Private by design:</strong> no accounts, ads, or analytics, and all data stays on the
+                    device. Barcode scanning uses the open-source zxing-cpp library, which decodes on the device. I
+                    chose it over Google ML Kit to avoid third-party telemetry, so Google Play Billing is the only
+                    component that uses the network.</li>
+                <li><strong>Monetization:</strong> a free tier plus an optional Pro upgrade (lifetime purchase or
+                    subscription) through Google Play Billing. Pro limits are enforced in the app's logic, and the
+                    last known purchase state is cached so a network problem never drops a paying user to the free
+                    tier.</li>
+                <li><strong>Everyday features:</strong> barcode and serial number scanning (with a picker when a code
+                    matches several items), warranty and expiry reminders using WorkManager, an optional biometric app
+                    lock, CSV import and export, PDF reports, and backup and restore.</li>
+                <li><strong>Quality and release:</strong> unit and instrumented tests, R8 code shrinking, seven
+                    languages, a signed app bundle, a completed Play data safety form, and a privacy policy hosted on
+                    GitHub Pages.</li>
+            </ul>
+
+            <h3>What I Learned</h3>
+            <p>
+                Building toward a real release taught me that finishing an app is its own discipline. Small details
+                matter: keeping the list position after a delete, delivering scan results on the right thread, and
+                making sure every claim in a privacy policy matches what the code actually does. Checking those
+                claims against the app's merged manifest and its dependencies reinforced the security mindset from
+                this program, because users trust the app with information about what they own.
+            </p>
+
+            <div class="artifact-links">
+                <a href="https://play.google.com/store/apps/details?id=com.alttabtechnologies.kept"
+                    target="_blank" rel="noopener noreferrer" class="github-btn">Kept on Google Play</a>
+                <a href="https://peacefuldivide.github.io/kept-legal/" target="_blank" rel="noopener noreferrer"
+                    class="github-btn">Kept Privacy Policy</a>
 
                 <!-- Back to Top Link -->
                 <a href="#top" class="back-to-top">

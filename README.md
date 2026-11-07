@@ -12,7 +12,8 @@ Welcome to my computer science ePortfolio. I am Andrew Allen and this repository
    - [Category 1: Software Engineering and Design](#category-1-software-engineering-and-design)
    - [Category 2: Algorithms and Data Structures](#category-2-algorithms-and-data-structures)
    - [Category 3: Databases](#category-3-databases)
-5. [License & Copyright](#license--copyright)
+5. [Beyond the Capstone: Kept](#beyond-the-capstone-kept)
+6. [License & Copyright](#license--copyright)
 
 ---
 
@@ -66,6 +67,22 @@ The original inventory app did not contain any searching, sorting, or data aggre
 This enhancement transcended the original app's raw SQLite database implementation. During this enhancement I implemented a Room ORM database architecture, replacing direct access SQLite interactions with a structured MVVM pattern that separates UI, logic, and persistence layers. I defined type-safe data access objects like `InventoryDao`, abstracting database operations through a repository layer, using Kotlin coroutines for asynchronous operations, and implementing comprehensive unit tests `InventoryDaoTest` were created to validate data integrity. These database improvements not only improve code reliability and testability but also demonstrate how modern Android development practices can transform this inventory app into a more resilient and maintainable data management system that protects both performance and accuracy.
 
 **[View Source Code & Narrative](https://github.com/PeacefulDivide/ePortfolio/tree/main/Artifact%20-%20Databases)**
+
+---
+
+## Beyond the Capstone: Kept
+
+After the capstone, I kept building the inventory app. It is now **Kept: Inventory & Collections**, an Android app for tracking the things you own, from household belongings to collections such as vinyl records. It is available on [Google Play](https://play.google.com/store/apps/details?id=com.alttabtechnologies.kept). Its source code is not published here. Read more on the [live portfolio](https://peacefuldivide.github.io/ePortfolio/#kept).
+
+**Highlights:**
+- Kotlin, MVVM, fragment-based navigation, and Jetpack Compose for several screens.
+- Room with hand-written database migrations (schema version 7) and no destructive fallback.
+- Private by design: no accounts, ads, or analytics. Barcode scanning uses the on-device zxing-cpp library, and Google Play Billing is the only component that uses the network.
+- A free tier plus an optional Pro upgrade through Google Play Billing.
+- Barcode and serial number scanning, reminders, an optional biometric app lock, CSV and PDF export, and backup and restore.
+- Unit and instrumented tests, R8 shrinking, and seven languages.
+
+**[Kept Privacy Policy](https://peacefuldivide.github.io/kept-legal/)**
 
 ---
 
