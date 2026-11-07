@@ -72,7 +72,7 @@ This enhancement transcended the original app's raw SQLite database implementati
 
 ## Beyond the Capstone: Kept
 
-After the capstone, I kept building the inventory app. It is now **Kept: Inventory & Collections**, an Android app for tracking the things you own, from household belongings to collections such as vinyl records. It is available on [Google Play](https://play.google.com/store/apps/details?id=com.alttabtechnologies.kept). Its source code is not published here. Read more on the [live portfolio](https://peacefuldivide.github.io/ePortfolio/#kept).
+After the capstone, I kept building the inventory app. It is now **Kept: Inventory & Collections**, an Android app for tracking the things you own, from household belongings to collections such as vinyl records. It is available on [Google Play](https://play.google.com/store/apps/details?id=com.alttabtechnologies.kept). Its source code is not published, but there is a [showcase repository](https://github.com/PeacefulDivide/kept-android-app) with screenshots and details. Read more on the [live portfolio](https://peacefuldivide.github.io/ePortfolio/#kept).
 
 **Highlights:**
 - Kotlin, MVVM, fragment-based navigation, and Jetpack Compose for several screens.
